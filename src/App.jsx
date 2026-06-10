@@ -5,6 +5,7 @@ import HistorySection from "./components/HistorySection"
 import OutputBox from "./components/OutputBox"
 import Footer from "./components/Footer"
 import { useEffect, useState } from "react"
+import { Toaster } from 'react-hot-toast';
 
 function App() {
 
@@ -39,11 +40,12 @@ function App() {
         <OutputBox data={allJokes} />
 
         {/* history section */}
-        <HistorySection data={allJokes} onJoke={jokeHandler}/>
+        <HistorySection data={allJokes} onJoke={jokeHandler} />
       </main>
 
       {/* footer section */}
       <Footer />
+      <Toaster />
     </div>
   )
 }
