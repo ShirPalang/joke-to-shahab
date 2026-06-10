@@ -20,6 +20,8 @@ function InputBox({ onJoke }) {
     result = result.replace(/جعفر/g, 'شهاب');
 
     result = result.replace(/حیف نون/g, 'شهاب');
+
+    result = result.replace(/جفر/g, 'شهاب');
     
     const id = currentJokes.length === 0 ? 1 : (currentJokes[0].id + 1)
 
